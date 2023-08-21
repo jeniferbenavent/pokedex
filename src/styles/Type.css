@@ -1,0 +1,28 @@
+.type-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.type{
+  display: inline-block;
+  background-color: red;
+  border-radius: 5px;
+  padding: 5px 8px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.type-fire{background-color:#FD7D24}
+.type-grass{background-color: grey}
+.type-fairy{background-color:grey}
+.type-ghost{background-color:grey}
+.type-poison{background-color:#B87FC8}
+.type-flying{background-color:grey}
+.type-grass{background-color:#9BCC50}
+.type-water{background-color:#8FB4FF}
+.type-bug{background-color:grey}
+.type-normal{background-color:grey}
+.type-ground{background-color:#FFCD83}
+.type-steel{background-color: #ABB0CD}
+.type-fighting{background-color: #E06B63}
