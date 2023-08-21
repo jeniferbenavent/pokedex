@@ -12,10 +12,10 @@ export const SmallCard = () => {
           {pokemonList.map((pokemon) => (
             <div className="pokeCard">
               <div key={pokemon.number} className="pokeInfo">
-                <img src={pokemon.image} alt={pokemon.name} className="pokeImg" width={100}/>
+                <img src={pokemon.image} alt={pokemon.name} className="pokeImg"/>
                 <p className="pokeNumber">Nº{pokemon.number}</p>
                 <p className="pokeName">{pokemon.name}</p>
-                <p><Type type={pokemon.types.join(', ')}/></p>
+                <Type type={pokemon.types.join(', ')}/>
               </div>
             </div>
           ))}
