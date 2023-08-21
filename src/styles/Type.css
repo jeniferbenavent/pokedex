@@ -9,7 +9,8 @@
   background-color: red;
   border-radius: 5px;
   padding: 5px 8px;
-  font-weight: bold;
+  font-family: 'GalanoGrotesqueBold';
+  font-size: 0.7vw;
   margin-right: 10px;
 }
 

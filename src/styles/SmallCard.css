@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 .container {
   display: flex;
   justify-content: center;
@@ -34,6 +35,7 @@
 .pokeNumber {
   font-size: 14px;
   color: #888;
+  font-family: 'GalanoGrotesqueBold';
 }
 
 .pokeName {
@@ -41,4 +43,5 @@
   font-weight: bold;
   margin: 5px 0;
   text-transform: capitalize;
+  font-family:"GalanoGrotesqueBold";
 }

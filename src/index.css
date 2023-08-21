@@ -1,3 +1,8 @@
 body{
   background-color: #F6F8FC;
 }
+
+@font-face {
+  font-family: 'GalanoGrotesqueBold';
+  src: url("/assets/fonts/GalanoGrotesqueBold.otf");
+}
