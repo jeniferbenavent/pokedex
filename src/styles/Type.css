@@ -6,7 +6,6 @@
 
 .type{
   display: inline-block;
-  background-color: red;
   border-radius: 5px;
   padding: 5px 8px;
   font-family: 'GalanoGrotesqueBold';
@@ -18,11 +17,14 @@
 .type-fairy{background-color:grey}
 .type-ghost{background-color:grey}
 .type-poison{background-color:#B87FC8; color: #4f1161}
-.type-flying{background-color:grey}
+.type-flying{background-color: #79aad2; color: #2d4251}
 .type-grass{background-color:#ABE686; color: #528B33}
 .type-water{background-color:#8FB4FF; color: #092D6E}
-.type-bug{background-color:grey}
+.type-bug{background-color:#7ea864; color: #2c4f19}
 .type-normal{background-color:#9c9b9b}
 .type-ground{background-color:#FFCD83}
 .type-steel{background-color: #ABB0CD}
 .type-fighting{background-color: #E06B63}
+.type-dragon{background-color: grey}
+.type-physic{background-color: grey}
+.type-ice{background-color: grey}
