@@ -14,16 +14,15 @@
   margin-left: 5px;
 }
 
-.type-fire{background-color:#FD7D24}
-.type-grass{background-color: grey}
+.type-fire{background-color:#FF994E; color: #7B490F}
 .type-fairy{background-color:grey}
 .type-ghost{background-color:grey}
-.type-poison{background-color:#B87FC8}
+.type-poison{background-color:#B87FC8; color: #4f1161}
 .type-flying{background-color:grey}
-.type-grass{background-color:#9BCC50}
-.type-water{background-color:#8FB4FF}
+.type-grass{background-color:#ABE686; color: #528B33}
+.type-water{background-color:#8FB4FF; color: #092D6E}
 .type-bug{background-color:grey}
-.type-normal{background-color:grey}
+.type-normal{background-color:#9c9b9b}
 .type-ground{background-color:#FFCD83}
 .type-steel{background-color: #ABB0CD}
 .type-fighting{background-color: #E06B63}
