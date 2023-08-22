@@ -14,18 +14,20 @@
 }
 
 .type-fire{background-color:#FF994E; color: #7B490F}
-.type-fairy{background-color:grey}
-.type-ghost{background-color:grey}
+.type-fairy{background-color:#ffb9dc; color: #dd5499}
+.type-ghost{background-color:#ae9ad1; color: #5a5069}
 .type-poison{background-color:#B87FC8; color: #4f1161}
 .type-flying{background-color: #79aad2; color: #2d4251}
 .type-grass{background-color:#ABE686; color: #528B33}
 .type-water{background-color:#8FB4FF; color: #092D6E}
-.type-bug{background-color:#7ea864; color: #2c4f19}
-.type-normal{background-color:#a6a6a6; color: #5e5c5c}
-.type-ground{background-color:#FFCD83; color: #2c4f19}
-.type-steel{background-color: #698179; color: #3d4b46}
-.type-fighting{background-color: #E06B63}
-.type-dragon{background-color: grey}
-.type-physic{background-color: grey}
-.type-ice{background-color: grey}
-.type-dark{background-color: grey}
+.type-bug{background-color:#a9af75; color: #616917}
+.type-normal{background-color:#a6a6a6; color: #393838}
+.type-ground{background-color:#FFCD83; color: #7B490F}
+.type-steel{background-color: #96a29e; color: #324740}
+.type-fighting{background-color: #f37758; color: #8f2d15}
+.type-dragon{background-color: #aca2f9; color: #6250e9}
+.type-psychic{background-color:#e674ad; color: #880b49}
+.type-ice{background-color: #b6e0f4; color: #3c748e}
+.type-dark{background-color: #686868; color: #cececc}
+.type-electric{background-color: #e6e649; color: #5a5a09}
+.type-rock{background-color: #ca8c6c; color: #642708}
