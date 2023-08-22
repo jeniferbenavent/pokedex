@@ -21,10 +21,11 @@
 .type-grass{background-color:#ABE686; color: #528B33}
 .type-water{background-color:#8FB4FF; color: #092D6E}
 .type-bug{background-color:#7ea864; color: #2c4f19}
-.type-normal{background-color:#9c9b9b}
-.type-ground{background-color:#FFCD83}
-.type-steel{background-color: #ABB0CD}
+.type-normal{background-color:#a6a6a6; color: #5e5c5c}
+.type-ground{background-color:#FFCD83; color: #2c4f19}
+.type-steel{background-color: #698179; color: #3d4b46}
 .type-fighting{background-color: #E06B63}
 .type-dragon{background-color: grey}
 .type-physic{background-color: grey}
 .type-ice{background-color: grey}
+.type-dark{background-color: grey}

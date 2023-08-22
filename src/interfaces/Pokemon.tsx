@@ -16,3 +16,8 @@ export interface Types{
     name: string
   };
 }
+
+export interface PaginationProps {
+  currentPage: number;
+  onPageChange: (page: number) => void;
+}

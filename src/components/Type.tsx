@@ -2,7 +2,6 @@ import "../styles/Type.css"
 
 export const Type = (props: any) => {
   const typesArray = props.type.split(', ');
-  console.log(typesArray);
   
   return (
     <div>

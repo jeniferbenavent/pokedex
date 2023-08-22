@@ -5,11 +5,12 @@ import { useEffect, useState } from "react";
 export const usePokemonAPI = () => {
     
   const [pokemonList, setPokemonList] = useState<Pokemon[]>([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const resultsPerPage = 20;
 
-  useEffect(() => {
-    async function fetchPokemonData() {
+    async function fetchPokemonData(page: number) {
       try {
-        const response = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=20');
+        const response = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=${resultsPerPage}&offset=${(page - 1) * resultsPerPage}`);
         const results = response.data.results;
 
         const pokemonDataPromises = results.map(async (result: Results) => {
@@ -31,9 +32,9 @@ export const usePokemonAPI = () => {
       }
     }
 
-    fetchPokemonData();
+    useEffect(() => {
+      fetchPokemonData(currentPage);
+    }, [currentPage]);
 
-  }, []);
-
-  return { pokemonList }
+  return { pokemonList, currentPage, setCurrentPage, }
 }
