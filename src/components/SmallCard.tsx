@@ -10,7 +10,7 @@ export const SmallCard = () => {
     <>
       <section className="container">
         {isLoading ? (
-          <img src="src/assets/icons/pokeball.png" alt="Loading..." className="rotate-image" width={30}/>
+          <img src="/assets/icons/pokeball.png" alt="Loading..." className="rotate-image" width={30}/>
         ) : (
           <div className="grid-container">
             {pokemonList.map((pokemon, index: number) => (
