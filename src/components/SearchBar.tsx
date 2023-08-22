@@ -10,7 +10,7 @@ export const SearchBar = () => {
         placeholder='Search your pokemon!'/>
       <button>
         <img 
-          src='src/assets/icons/red_pokeball.png' 
+          src='/assets/img/red_pokeball.png' 
           width={45} 
           height={45}
         />
