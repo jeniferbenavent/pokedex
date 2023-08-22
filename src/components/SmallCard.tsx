@@ -3,7 +3,7 @@ import { usePokemonAPI } from "../hooks/usePokemonAPI";
 import { Type } from "./Type";
 import { Pagination } from "./Pagination";
 
-export const SmallCard = ({ name }) => {
+export const SmallCard = ({ name }: { name: string }) => {
   const { pokemonList, currentPage, setCurrentPage, isLoading } = usePokemonAPI(name);
 
   return (
