@@ -2,22 +2,26 @@ import { Pokemon, Results, Types } from "../interfaces/Pokemon";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-export const usePokemonAPI = () => {
+export const usePokemonAPI = (nameSearched:string) => {
   const [pokemonList, setPokemonList] = useState<Pokemon[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [isLoading, setIsLoading] = useState(true); // Agregamos el estado de isLoading
+  const [isLoading, setIsLoading] = useState(true);
   const resultsPerPage = 21;
 
   async function fetchPokemonData(page: number) {
     try {
-      setIsLoading(true); // Marcamos isLoading como true al comenzar la carga
-      const response = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=${resultsPerPage}&offset=${(page - 1) * resultsPerPage}`);
+      setIsLoading(true);
+      const endpoint = nameSearched
+      ? `https://pokeapi.co/api/v2/pokemon?limit=1010&offset=0`
+        : `https://pokeapi.co/api/v2/pokemon?limit=${resultsPerPage}&offset=${(page - 1) * resultsPerPage}`;
+
+      const response = await axios.get(endpoint);
       const results = response.data.results;
 
       const pokemonDataPromises = results.map(async (result: Results) => {
         const pokemonResponse = await axios.get(result.url);
         const types = pokemonResponse.data.types.map((typeInfo: Types) => typeInfo.type.name);
-
+        
         return {
           number: pokemonResponse.data.id,
           name: result.name,
@@ -27,8 +31,17 @@ export const usePokemonAPI = () => {
       });
 
       const pokemonData = await Promise.all(pokemonDataPromises);
-      setPokemonList(pokemonData);
+
+      if (nameSearched) {
+        const filteredPokemonList = pokemonData.filter((pokemon) =>
+        pokemon.name.toLowerCase().includes(nameSearched.toLowerCase()));
+        setPokemonList(filteredPokemonList);
+        
+      }else{
+        setPokemonList(pokemonData);
+      }
       setIsLoading(false);
+
     } catch (error) {
       console.error('Error al imprimir los Pokémon:', error);
       setIsLoading(false);
@@ -37,7 +50,7 @@ export const usePokemonAPI = () => {
 
   useEffect(() => {
     fetchPokemonData(currentPage);
-  }, [currentPage]);
+  }, [currentPage,nameSearched]);
 
   return { pokemonList, currentPage, setCurrentPage, isLoading }; // Devolvemos el estado de isLoading
 }

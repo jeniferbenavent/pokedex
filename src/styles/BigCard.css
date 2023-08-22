@@ -1,0 +1,19 @@
+.pokeBigCard {
+  padding: 20px;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 20px;
+  padding-bottom: 30px;
+  height: 100vh;
+  float: right;
+  width: 18%;
+  margin-right: 50px;
+  margin-left: -450px;
+  display: none;
+}
+
+@media screen and (max-width: 1366px) and (max-height: 768px) {
+  .pokeBigCard {
+    margin-left: 0px;
+  }
+}

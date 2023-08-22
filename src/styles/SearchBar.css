@@ -11,7 +11,7 @@ input{
   border-radius: 14px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 23px;
-  width: 64%;
+  width: 45%;
 }
 
 input :focus{
@@ -23,5 +23,5 @@ button{
   border: none;
   cursor: pointer;
   position: absolute;
-  right: 17%;
+  right: 27%;
 }

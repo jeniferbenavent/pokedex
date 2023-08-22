@@ -3,8 +3,8 @@ import { usePokemonAPI } from "../hooks/usePokemonAPI";
 import { Type } from "./Type";
 import { Pagination } from "./Pagination";
 
-export const SmallCard = () => {
-  const { pokemonList, currentPage, setCurrentPage, isLoading } = usePokemonAPI();
+export const SmallCard = ({ name }) => {
+  const { pokemonList, currentPage, setCurrentPage, isLoading } = usePokemonAPI(name);
 
   return (
     <>
@@ -28,7 +28,8 @@ export const SmallCard = () => {
       </section>
       {isLoading ?
         <span></span> :
-        <Pagination currentPage={currentPage} onPageChange={setCurrentPage} />}
+        <Pagination currentPage={currentPage} onPageChange={setCurrentPage} />
+      }
     </>
   );
 };

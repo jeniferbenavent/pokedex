@@ -21,3 +21,7 @@ export interface PaginationProps {
   currentPage: number;
   onPageChange: (page: number) => void;
 }
+
+export interface SearchBarProps {
+  onSearch: (term: string) => void;
+}
