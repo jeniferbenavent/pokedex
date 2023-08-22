@@ -2,7 +2,6 @@ import '../styles/SearchBar.css'
 
 export const SearchBar = () => {
 
-
   return (
     <section className='searchBar-Container'>
       <input 

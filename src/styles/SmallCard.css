@@ -21,6 +21,7 @@
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 20px;
   padding-bottom: 30px;
+  cursor: pointer;
 }
 
 .pokeInfo {
@@ -45,4 +46,17 @@
   margin: 5px 0;
   text-transform: capitalize;
   font-family:"GalanoGrotesqueBold";
+}
+
+.rotate-image {
+  animation: rotate 2s linear infinite; /* Aplicar la animación llamada 'rotate' */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); /* Rotación inicial */
+  }
+  to {
+    transform: rotate(360deg); /* Rotación completa (una vuelta completa) */
+  }
 }
